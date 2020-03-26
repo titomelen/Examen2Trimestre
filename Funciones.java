@@ -145,6 +145,7 @@ public class funcion6 {
 }
 public class funcion7 {
 	public static void main(String[] args) {
+		//Cremamos el array para que imprimiera más adelante
 		String [] listaDeCadenas = {"Javier", "Carlos", "Limonxelo", "Carlitos"};
 		System.out.println(funcion7(listaDeCadenas));
 	}
@@ -173,4 +174,28 @@ public class funcion7 {
 	        return Arrays.toString(listaDeCadenas);
 
 	    	}
+}
+public class funcion8 {
+	public static void main(String[] args) {
+		//Creamos el array para ver si es falso o no
+		String [] alumnos = {"Linomenchelo","Cav1nem","Lenendi","Livlad"};
+		int [][] tiemposDeTrabajos = { {0,0,0,0} ,  {4,0,3,2}};
+		System.out.println(Funcion8(alumnos, tiemposDeTrabajos));
+}
+	public static boolean funcion8(String[] alumnos, int[][] tiemposDeTrabajos){
+	        int t = 500;
+		int sumatorio = 0;
+		boolean result = true;
+	for(int i = 0; i < tiemposDeTrabajos.length; i++){
+	    sumatorio = 0;
+	    for(int j = 0; j < tiemposDeTrabajos.length; j++){
+	        sumatorio += tiemposDeTrabajos[j][i];
+	    }
+	    if(sumatorio<=t){
+	        result = false;
+	    }
+	}
+	return result;
+
+	}
 }
