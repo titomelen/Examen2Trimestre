@@ -42,3 +42,25 @@ public class funcion2 {
 
   }
 }
+public class funcion3 {
+    public static void main(String[] args) {
+        System.out.println(Funcion3(200));
+    }
+    public static int funcion3(int num) {
+
+
+        int x = 5;
+        int ymenos = 200-50;
+        int ymas = 200+50;
+        int rang = (int)Math.floor(Math.random()*(ymas+ymenos));
+        int result = 0;
+
+        if (num%x == 0) {
+            result = rang%num;
+        }
+
+        return result;
+
+    }
+
+}
